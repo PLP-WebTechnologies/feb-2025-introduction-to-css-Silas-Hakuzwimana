@@ -1,205 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Advanced HTML5 Webpage</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
     <header>
-      <h1>Advanced HTML5 Website</h1>
-      <p>Explore HTML5 elements, forms, and multimedia in this tutorial.</p>
+        <h1>Welcome to CSS Styling</h1>
+        <p>This is a basic example of applying CSS styles to an HTML document.</p>
     </header>
 
-    <!-- Ordered list with Roman numerals -->
+    <!-- Image Section -->
     <section>
-      <h2>My Roman Numeral List</h2>
-      <div class=start"">
-        <ol type="I">
-          <li>Introduction to HTML5</li>
-          <li>Advanced HTML Elements</li>
-          <li>Forms and Form Validation</li>
-          <li>Multimedia Integration</li>
-          <li>Final Project</li>
-        </ol>
-      </div>
+        <h2>Nature Image</h2>
+        <img src="https://images.pexels.com/photos/1586766/pexels-photo-1586766.jpeg" alt="Nature Image" class="nature-image">
     </section>
 
-    <!-- External image from Pexels -->
+    <!-- Content Section -->
     <section>
-      <h2>Beautiful Nature</h2>
-      <img
-        src="https://images.pexels.com/photos/1586766/pexels-photo-1586766.jpeg"
-        alt="Nature Image"
-        width="600"
-      />
+        <h2>About CSS</h2>
+        <p id="intro">CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed on the screen, paper, or in other media.</p>
     </section>
 
-    <!-- Table with contact information -->
-    <section>
-      <h2>Contact Information</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Mobile</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John Doe</td>
-            <td>123 Elm Street</td>
-            <td>+1234567890</td>
-            <td>john.doe@example.com</td>
-          </tr>
-          <tr>
-            <td>Jane Smith</td>
-            <td>456 Oak Avenue</td>
-            <td>+9876543210</td>
-            <td>jane.smith@example.com</td>
-          </tr>
-          <tr>
-            <td>Michael Brown</td>
-            <td>789 Pine Road</td>
-            <td>+5556667777</td>
-            <td>michael.brown@example.com</td>
-          </tr>
-          <tr>
-            <td>Sarah Johnson</td>
-            <td>321 Birch Lane</td>
-            <td>+1122334455</td>
-            <td>sarah.johnson@example.com</td>
-          </tr>
-          <tr>
-            <td>David Wilson</td>
-            <td>654 Maple Drive</td>
-            <td>+9988776655</td>
-            <td>david.wilson@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Registration Form -->
-    <section>
-      <h2 class="start">Registration Form</h2>
-      <form action="#" method="POST">
-        <!-- Name Field -->
-        <div class="form-section">
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your full name"
-            required
-          />
-        </div>
-
-        <!-- Email Field -->
-        <div class="form-section">
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
-
-        <!-- Password Field -->
-        <div class="form-section">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Enter your password"
-            required
-          />
-        </div>
-
-        <!-- Date Field -->
-        <div class="form-section">
-          <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" name="dob" required />
-        </div>
-
-        <!-- Dropdown for User Type -->
-        <div class="form-section">
-          <label for="userType">User Type</label>
-          <select id="userType" name="userType" required>
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <!-- Radio Buttons for Gender -->
-        <div class="form-section">
-          <label>Gender</label>
-          <input type="radio" id="male" name="gender" value="male" required />
-          <label for="male">Male</label>
-          <input
-            type="radio"
-            id="female"
-            name="gender"
-            value="female"
-            required
-          />
-          <label for="female">Female</label>
-          <input type="radio" id="other" name="gender" value="other" required />
-          <label for="other">Other</label>
-        </div>
-
-        <!-- Checkbox for Newsletter -->
-        <div class="form-section">
-          <input
-            type="checkbox"
-            id="newsletter"
-            name="newsletter"
-            value="yes"
-          />
-          <label for="newsletter">I would like to receive the newsletter</label>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- Multimedia Section with Audio and Video -->
-    <section>
-      <h2 class="start">Multimedia</h2>
-
-      <!-- Audio Element -->
-      <h3 class="start">Listen to Music</h3>
-      <audio controls>
-        <source
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-          type="audio/mp3"
-        />
-        Your browser does not support the audio element.
-      </audio>
-
-      <!-- Video Element -->
-      <h3 class="start">Watch a Video</h3>
-      <video width="600" controls>
-        <source
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video element.
-      </video>
-    </section>
-
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Advanced HTML5 Tutorial | All Rights Reserved</p>
+        <p>&copy; 2025 CSS Tutorial | All Rights Reserved</p>
     </footer>
-  </body>
+
+</body>
 </html>
